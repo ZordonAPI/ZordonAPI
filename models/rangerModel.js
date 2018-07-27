@@ -9,8 +9,7 @@ const rangerSchema = mongoose.Schema({
     firstAp: String,
     lastAp: String,
     numberOfAp: Number,
-    actor: String,
-
+    actor: String
 })
 
 var Ranger = mongoose.model("Ranger", rangerSchema);
