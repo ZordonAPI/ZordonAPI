@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+const DB = require("../config/dbConfig").DB
 
 const connectToMongo = function() {
   mongoose.connect(
-    "mongodb://localhost:27017/zordonAPI",
+    DB,
     { useNewUrlParser: true }
   );
 };
