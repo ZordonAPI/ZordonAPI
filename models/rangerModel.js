@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
 const rangerSchema = mongoose.Schema({
-    name: String,
-    gender: String,
-    season: String,
-    color: String,
-    homeworld: String,
-    firstAp: String,
-    lastAp: String,
-    numberOfAp: Number,
-    actor: String
+    name: { type: String, required: true },
+    gender: { type: String, required: true },
+    season: { type: String, required: true },
+    color: { type: String, required: true },
+    homeworld: { type: String, required: true },
+    firstAp: { type: String, required: true },
+    lastAp: { type: String, required: true },
+    numberOfAp: { type: Number, required: true },
+    actor: { type: String, required: true }
 })
 
 var Ranger = mongoose.model("Ranger", rangerSchema);

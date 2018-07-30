@@ -22,15 +22,18 @@
   },
   "homepage": "https://github.com/MachadoLhes/ZordonAPI#readme",
   "dependencies": {
+    "chai": "^4.1.2",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.4",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
+    "mocha": "^5.2.0",
     "mongoose": "^5.2.4",
     "morgan": "~1.9.0",
     "ramda": "^0.25.0",
+    "sinon": "^6.1.4",
     "socket.io": "^2.1.1"
   },
   "devDependencies": {
