@@ -1,7 +1,9 @@
-const LOCAL_DB = "mongodb://localhost:27017/zordonAPI";
-const PRODUCTION_DB = "mongodb://zordonAPI:Bit_rangers_94@ds259001.mlab.com:59001/zordonapi";
+require('dotenv/config')
 
-let useLocalDB = true
+const LOCAL_DB = "mongodb://localhost:27017/zordonAPI";
+const PRODUCTION_DB = "mongodb://zordonAPI:"+process.env.DB_PWD+"@ds259001.mlab.com:59001/zordonapi";
+
+let useLocalDB = false
 
 let DB = useLocalDB ? LOCAL_DB : PRODUCTION_DB
 
