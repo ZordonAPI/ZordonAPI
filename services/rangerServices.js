@@ -1,8 +1,9 @@
 const Ranger = require("../models/rangerModel")
 
-const getAll = () => {
+const getAll = req => {
+    console.log(req.query)
     return new Promise( (resolve, reject) => {
-        Ranger.find({}, (err,rangers) => {
+        Ranger.find(req.query, (err,rangers) => {
             if(err) {
                 reject(err)
             } else {
