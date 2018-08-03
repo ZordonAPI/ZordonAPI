@@ -24,7 +24,7 @@ const getRangerByID = id => {
     })
 }
 
-const newRanger = (ranger) => {
+const newRanger = ranger => {
     return new Promise( (resolve, reject) => {
         const createdRanger = new Ranger(ranger);
         createdRanger.save( (err, ranger) => {
