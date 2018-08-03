@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const rangerSchema = mongoose.Schema({
+    rangerID: { type: Number, required: true},
     name: { type: String, required: true },
     gender: { type: String, required: true },
     season: { type: String, required: true },

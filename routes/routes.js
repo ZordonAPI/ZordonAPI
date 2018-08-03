@@ -10,6 +10,8 @@ const rangerService = require("../services/rangerServices")
  */
 router.get("/rangers/", (req, res) => handler.getHandler(res, rangerService.getAll(req)));
 
+router.get("/rangers/:id", (req, res) => handler.getHandler(res, rangerService.getRangerByID(req.params.id)));
+
 router.post("/rangers/", (req, res) => handler.postHandler(res, rangerService.newRanger(req.body)));
 
 module.exports = router;

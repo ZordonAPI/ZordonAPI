@@ -1,5 +1,6 @@
 {
-	"name": "Billy",
+    "rangerID":2,
+    "name": "Billy",
     "gender": "Male",
     "season": "Mighty Morphin",
     "color": "Blue",
