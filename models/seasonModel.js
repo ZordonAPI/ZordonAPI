@@ -9,7 +9,7 @@ const seasonSchema = mongoose.Schema({
     firstEpisode: { type: String, required: true },
     lastEpisode: { type: String, required: true },
     producer: { type: String, required: true },
-    rangers: Array
+    rangers: { type: Array, required: true}
 }) 
 
 var Season = mongoose.model("Season", seasonSchema);

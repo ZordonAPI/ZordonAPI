@@ -1,12 +1,14 @@
 {
-    "rangerID":2,
-    "name": "Billy",
-    "gender": "Male",
-    "season": "Mighty Morphin",
-    "color": "Blue",
-    "homeworld": "Earth",
-    "firstAp": "MMPR 1",
-    "lastAp": "Zeo something",
-    "numberOfAp": 164,
-    "actor": "Não lembro"
+    "rangerID":1,
+    "name": "jason",
+    "fullName": "jason lee scott",
+    "zord": ["tyrannosaurus dinozord","red dragon thunderzord"],
+    "gender": "male",
+    "season": "mighty morphin",
+    "color": "blue",
+    "homeworld": "earth",
+    "firstAp": "day of the dumpster",
+    "lastAp": "legendary battle",
+    "numberOfAp": 108,
+    "actor": "austin st john"
 }

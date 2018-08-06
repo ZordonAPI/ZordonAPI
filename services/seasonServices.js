@@ -12,6 +12,18 @@ const getAll = req => {
     })
 }
 
+const getSeasonByNumber = seasonNumber => {
+    return new Promise( (resolve, reject) => {
+        Season.findOne({'seasonNumber':seasonNumber}, (err,season) => {
+            if(err) {
+                reject(err)
+            } else {
+                resolve(season)
+            }
+        })
+    })
+}
+
 const newSeason = season => {
     return new Promise( (resolve, reject) => {
         const createdSeason = new Season(season);
@@ -27,5 +39,6 @@ const newSeason = season => {
 
 module.exports = {
     getAll,
+    getSeasonByNumber,
     newSeason
 }

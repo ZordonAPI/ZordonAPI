@@ -22,6 +22,8 @@ router.post("/rangers/", (req, res) => handler.postHandler(res, rangerService.ne
  */
 router.get("/seasons/", (req, res) => handler.getHandler(res, seasonService.getAll(req)));
 
+router.get("/seasons/:id", (req, res) => handler.getHandler(res, seasonService.getAll(req)));
+
 router.post("/seasons/", (req, res) => handler.postHandler(res, seasonService.newSeason(req.body)));
 
 module.exports = router;
