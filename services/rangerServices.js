@@ -8,7 +8,7 @@ const getAll = req => {
             } else {
                 resolve(rangers)
             }
-        })
+        }).select("-rangerID")
     })
 }
 
@@ -20,7 +20,7 @@ const getRangerByID = id => {
             } else {
                 resolve(rangers)
             }
-        })
+        }).select("-rangerID")
     })
 }
 

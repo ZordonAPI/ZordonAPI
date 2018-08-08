@@ -15,6 +15,6 @@ const rangerSchema = mongoose.Schema({
     actor: { type: String, required: true }
 })
 
-var Ranger = mongoose.model("Ranger", rangerSchema);
+const Ranger = mongoose.model("Ranger", rangerSchema);
 
 module.exports = Ranger;

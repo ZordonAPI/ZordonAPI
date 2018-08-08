@@ -12,6 +12,6 @@ const seasonSchema = mongoose.Schema({
     rangers: { type: Array, required: true}
 }) 
 
-var Season = mongoose.model("Season", seasonSchema);
+const Season = mongoose.model("Season", seasonSchema);
 
 module.exports = Season;
