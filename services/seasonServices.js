@@ -16,7 +16,7 @@ const getAll = req => {
 const getSeasonByNumber = seasonNumber => {
     return new Promise( (resolve, reject) => {
         Season.findOne({'seasonNumber':seasonNumber}, (err,season) => {
-        }).select('-seasonNumber')
+        }).select("-seasonNumber")
         .then( season => {
             resolve(season)
         })
