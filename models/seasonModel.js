@@ -8,6 +8,7 @@ const seasonSchema = mongoose.Schema({
     numberOfEpisodes: { type: Number, required: true },
     firstEpisode: { type: String, required: true },
     lastEpisode: { type: String, required: true },
+    theme: { type: String, required: true },
     producer: { type: String, required: true },
     rangers: { type: Array, required: true}
 }) 
