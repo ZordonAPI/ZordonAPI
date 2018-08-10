@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const mongoosePaginate = require("mongoose-paginate");
 
 const rangerSchema = mongoose.Schema({
     rangerID: { type: Number, required: true},
@@ -14,6 +15,7 @@ const rangerSchema = mongoose.Schema({
     numberOfAp: { type: Number, required: true },
     actor: { type: String, required: true }
 })
+rangerSchema.plugin(mongoosePaginate)
 
 const Ranger = mongoose.model("Ranger", rangerSchema);
 
