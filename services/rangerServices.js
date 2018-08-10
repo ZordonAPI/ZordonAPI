@@ -13,19 +13,6 @@ const getAll = req => {
     })
 }
 
-const getPaginated = req => {
-    return new Promise( (resolve, reject) => {
-        Ranger.paginate(req.query, {limit:4}, (err,rangers) => {
-        })
-        .then( rangers => {
-            resolve(rangers)
-        })
-        .catch( err => {
-            reject(err)
-        })
-    })
-}
-
 const getRangerByID = id => {
     return new Promise( (resolve, reject) => {
         Ranger.findOne({'rangerID':id}, (err,rangers) => {
@@ -55,7 +42,6 @@ const newRanger = ranger => {
 
 module.exports = {
     getAll,
-    getPaginated,
     newRanger,
     getRangerByID
 }

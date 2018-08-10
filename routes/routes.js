@@ -9,6 +9,8 @@ const seasonService = require("../services/seasonServices")
  * RANGER SERVICE
  * 
  */
+
+// TODO: Find a way to select page
 router.get("/rangers/", (req, res) => handler.getHandler(res, rangerService.getAll(req)));
 
 router.get("/rangers/:id", (req, res) => handler.getHandler(res, rangerService.getRangerByID(req.params.id)));
