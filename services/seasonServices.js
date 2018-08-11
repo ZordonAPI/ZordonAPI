@@ -3,7 +3,7 @@ const Season = require("../models/seasonModel")
 const getAll = req => {
     return new Promise( (resolve, reject) => {
         Season.find(req.query, (err,seasons) => {
-        }).select('-seasonNumber')
+        }).select('-seasonNumber -_id -__v')
         .then( seasons => {
             resolve(seasons)
         })
@@ -16,7 +16,7 @@ const getAll = req => {
 const getSeasonByNumber = seasonNumber => {
     return new Promise( (resolve, reject) => {
         Season.findOne({'seasonNumber':seasonNumber}, (err,season) => {
-        }).select("-seasonNumber")
+        }).select("-seasonNumber -_id -__v")
         .then( season => {
             resolve(season)
         })
