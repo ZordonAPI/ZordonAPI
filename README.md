@@ -40,18 +40,18 @@ An individual Ranger in the Power Rangers Universe, ordered by season.
 }
 ```
 **Schema**
->**rangerID:** *Number* - Only for sorting, doesn't get returned 
-	**name:** *String* - How the character is called by in the show
-	**fullName:** *String* - The character's full name
-	**zord:** *Array* - The one or more zords that the ranger rides
-	**gender:** *String* - Either male or female
-	**season:** *String* - The season this character is present as a ranger
-	**color:** *String* - The color of the ranger
-	**homeworld:** *String* - The ranger's planet of birth
-	**firstAp:** *String* - The episode that the character first appeared
-	**lastAp:** *String* - The episode that the character last appeared
-	**numberOfAp:** *Number* - The number of episodes the character has appeared
-	**actor:** *String* - The name of the actor that portrayed this character
+*  **rangerID:** *Number* - Only for sorting, doesn't get returned 
+*	**name:** *String* - How the character is called by in the show
+*	**fullName:** *String* - The character's full name
+*	**zord:** *Array* - The one or more zords that the ranger rides
+*	**gender:** *String* - Either male or female
+*	**season:** *String* - The season this character is present as a ranger
+*	**color:** *String* - The color of the ranger
+*	**homeworld:** *String* - The ranger's planet of birth
+*	**firstAp:** *String* - The episode that the character first appeared
+*	**lastAp:** *String* - The episode that the character last appeared
+*	**numberOfAp:** *Number* - The number of episodes the character has appeared
+*	**actor:** *String* - The name of the actor that portrayed this character
 
 ***Note:** Some rangers have had more than one color throughout their appearances in different seasons, in this case, we have decided to create a new entry in the database for each color the ranger had been.*
 
@@ -87,16 +87,17 @@ A season in the Power Rangers franchise, ordered by airing year.
 }
 ```
 **Schema**
->**seasonNumber:** *Number* - Only for sorting, doesn't get returned 
-	**name:** *String* - The name of the season
-	**sentaiName:** *String* - The name of Toei's Super Sentai season that the show was adapted from
-	**airingYear:** *Number* - The year that the season premiered
-	**numberOfEpisodes:** *Number* - Total number of episodes
-	**firstEpisode:** *String* - The name of the first episode of the season
-	**lastEpisode:** *String* - The name of the last episode of the season
-	**theme:** *String* - The season's overall theme
-	**producer:** *String* - The name of the company that produced the season
-	**rangers:** *Array* - The names of the main set of rangers
+*  **seasonNumber:** *Number* - Only for sorting, doesn't get returned 
+*	**name:** *String* - The name of the season
+*	**sentaiName:** *String* - The name of Toei's Super Sentai season that the show was adapted from
+*	**airingYear:** *Number* - The year that the season premiered
+*	**numberOfEpisodes:** *Number* - Total number of episodes
+*	**firstEpisode:** *String* - The name of the first episode of the season
+*	**lastEpisode:** *String* - The name of the last episode of the season
+*	**theme:** *String* - The season's overall theme
+*	**producer:** *String* - The name of the company that produced the season
+*	**rangers:** *Array* - The names of the main set of rangers
+
 	
 ***Note:** Although Mighty Morphin Power Rangers has had three seasons and a re-edited version of the first season in 2010, we are only considering the first three seasons that originally aired from 1993 to 1995 and counting them as one individual season*
 
