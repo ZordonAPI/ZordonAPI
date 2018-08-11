@@ -21,22 +21,22 @@ An individual Ranger in the Power Rangers Universe, ordered by season.
 **Response:**
 ```json
 {
-	"zord": [
-		"triceratops dinozord",
-	    "unicorn thunderzord",
-	    "wolf ninjazord",
-		"blue shogunzord"
-	],
-	"name": "billy",
-	"fullName": "william 'billy' cranston",
-	"gender": "male",
-	"season": "mighty morphin",
-	"color": "blue",
-	"homeworld": "earth",
-	"firstAp": "day of the dumpster",
-	"lastAp": "legendary battle",
-	"numberOfAp": 197,
-	"actor": "david yost"
+  "zord": [
+    "triceratops dinozord",
+    "unicorn thunderzord",
+    "wolf ninjazord",
+    "blue shogunzord"
+  ],
+  "name": "billy",
+  "fullName": "william 'billy' cranston",
+  "gender": "male",
+  "season": "mighty morphin",
+  "color": "blue",
+  "homeworld": "earth",
+  "firstAp": "day of the dumpster",
+  "lastAp": "legendary battle",
+  "numberOfAp": 197,
+  "actor": "david yost"
 }
 ```
 **Schema**
@@ -64,26 +64,26 @@ A season in the Power Rangers franchise, ordered by airing year.
 **Response:**
 ```json
 {
-	"rangers": [
-		"jason",
-		"billy",
-		"zack",
-		"trini",
-		"kimberly",
-		"tommy",
-		"rocky",
-		"adam",
-		"aisha",
-		"catherine"
-	],
-	"name": "mighty morphin power rangers",
-	"sentaiName": "kyoryu sentai zyuranger",
-	"airingYear": 1993,
-	"numberOfEpisodes": 142,
-	"firstEpisode": "day of the dumpster",
-	"lastEpisode": "rangers in reverse",
-	"theme": "dinosaurs",
-	"producer": "saban"
+  "rangers": [
+    "jason",
+    "billy",
+    "zack",
+    "trini",
+    "kimberly",
+    "tommy",
+    "rocky",
+    "adam",
+    "aisha",
+    "catherine"
+  ],
+  "name": "mighty morphin power rangers",
+  "sentaiName": "kyoryu sentai zyuranger",
+  "airingYear": 1993,
+  "numberOfEpisodes": 142,
+  "firstEpisode": "day of the dumpster",
+  "lastEpisode": "rangers in reverse",
+  "theme": "dinosaurs",
+  "producer": "saban"
 }
 ```
 **Schema**
