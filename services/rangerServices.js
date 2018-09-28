@@ -26,22 +26,7 @@ const getRangerByID = id => {
     })
 }
 
-const newRanger = ranger => {
-    return new Promise( (resolve, reject) => {
-        const createdRanger = new Ranger(ranger);
-        createdRanger.save( (err, ranger) => {
-        })
-        .then( rangers => { 
-            resolve(rangers)
-        })
-        .catch( err => {
-            reject(err)
-        })
-    })
-}
-
 module.exports = {
     getAll,
-    newRanger,
     getRangerByID
 }

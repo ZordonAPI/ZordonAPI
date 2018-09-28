@@ -26,22 +26,7 @@ const getSeasonByNumber = seasonNumber => {
     })
 }
 
-const newSeason = season => {
-    return new Promise( (resolve, reject) => {
-        const createdSeason = new Season(season);
-        createdSeason.save( (err, season) => {
-        })
-        .then( season => {
-            resolve(season)
-        })
-        .catch( err => {
-            reject(err)
-        })
-    })
-}
-
 module.exports = {
     getAll,
-    getSeasonByNumber,
-    newSeason
+    getSeasonByNumber
 }

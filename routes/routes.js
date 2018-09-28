@@ -13,8 +13,6 @@ router.get("/rangers/", (req, res) => handler.getHandler(res, rangerService.getA
 
 router.get("/rangers/:id", (req, res) => handler.getHandler(res, rangerService.getRangerByID(req.params.id)));
 
-router.post("/rangers/", (req, res) => handler.postHandler(res, rangerService.newRanger(req.body)));
-
 /**
  * 
  * SEASON SERVICE
@@ -23,7 +21,5 @@ router.post("/rangers/", (req, res) => handler.postHandler(res, rangerService.ne
 router.get("/seasons/", (req, res) => handler.getHandler(res, seasonService.getAll(req)));
 
 router.get("/seasons/:id", (req, res) => handler.getHandler(res, seasonService.getSeasonByNumber(req.params.id)));
-
-router.post("/seasons/", (req, res) => handler.postHandler(res, seasonService.newSeason(req.body)));
 
 module.exports = router;
